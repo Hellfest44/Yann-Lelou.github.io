@@ -1,38 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style\index.css" rel="stylesheet" media="all" type="text/css"> 
+    <link href="style/style.css" rel="stylesheet" media="all" type="text/css"> 
     
-    <title >Les Jardins de la Friborgère</title>
+    <title >Les Jardins  de la Friborgère</title>
 </head>
 
 <body>
 
 <!-- début container / start of container-->
-<div id="container">
+
+<div id="header1">
+
+        <div id="date"></div>
+
+        <h2 id="sayHello" class="m-5"></h2>
+
+        <div class="icon">
+            <div class="user">
+                <a href="./pages/inscription.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="panier">
+                <a href="pages\panier.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+</div>
+
+        <div class="social">
+            <a class= "reseaux" href="#"><img src=".\image\fb.png" alt="FaceBook"/></a>
+            <a class= "reseaux" href="#"><img src=".\image\twitter.png" alt="Twitter"/></a>
+            <a class= "reseaux" href="#"><img src=".\image\pinterest.png"  alt="Pinterest"/></a>
+            <a class= "reseaux" href="#"><img src=".\image\insta.png" alt="Instagram"/></a>
+        </div> 
+
     <!-- début du header / start of header-->
     <div id="header">
-        <div id="date"></div>
-        
         <div class="title">
             <div class="logo"></div>
-            <h1 class="titre">Les Jardins de la Friborgère</h1>       
+            <h1 class="titre">Les Jardins</h1>  
+            <h1 class="titre1">de la Friborgère</h1>      
         </div>
-        <div class="social">
-            <img src=".\Photos\fb.png" href="#" alt="FaceBook"/>
-            <img src="..\photos\twitter.png" alt="Twitter"/>
-            <img src="..\photos\pinterest.png" alt="Pinterest"/>
-            <img src="..\photos\insta.png" alt="Instagram"/>
-        </div>        
+               
     </div> 
     <!-- fin du header / end of header-->
-
-        
-	
 
     <!-- debut de la navbar / start of navbar-->
 
@@ -58,27 +80,43 @@
                 <!--Responsive Menu-->
                 <nav role="navigation" id="topnav_responsive_menu">
                     <ul>	
-		              <li><a href="pages\Légume.html">Légumes</a></li>
+		              <li><a href="pages\legumes.html">Légumes</a></li>
 		              <li><a href="pages\conseils.html">Conseils</a></li>
-		              <li><a href="pages\magasin.html">Magasin</a></li>
-                      <li><a href="pages\video.html">Vidéo</a></li>
+		              <li><a href="pages\tableau.html">Magasin</a></li>
+                      <li><a href="pages\partenaires.html">Nos partenaires</a></li>
                       <li><a href="pages\contact.html">Contact</a></li>
                     </ul>
                 </nav>
            </div>
         </div> 
         <!--Voir avec la vidéo dans mes fav pour la navbar-->
-        <div class="search">
-            <form id= "searchbox" method= "get " action= "/search " autocomplete= "off ">
-                <div>
-                    <input class="search-texte" name= "q" type= "text " placeholder ="search… "/><input id= "button-submit" type= "submit" value= "submit"/>            
-                    <button class="favorite styled" type="button">connection/inscription</button>
-                </div>
-            </form>
-        </div>
+        
     </div>
 
     <!-- fin de la navbar / end of navbar-->
+
+    <!-- début aside / start of aside-->
+
+    <aside id="aside">
+        <div class="groupe groupe1">       
+            <div class="item item1"><a href="pages/pageDeBase.html">Le Marché</a></div>
+            <div class="item item2"><a href="pages/pageDeBase.html">Les Graines</a></div>
+            <div class="item item3"><a href="pages/pageDeBase.html">Les Plants</a></div>
+        </div>
+        <div class="item item4">
+            <form id= "searchbox" method= "get " action= "/search " autocomplete= "off ">
+                <input class="search" name= "q" type= "text " placeholder ="search… "/>
+                <input id= "button-submit" type= "submit" value= "submit"/>
+            </form>
+        </div>
+        <div class="groupe groupe2">
+            <div class="item item5"><a href="pages/pageDeBase.html">Le jardin</a></div>
+            <div class="item item6"><a href="pages/pageDeBase.html">Les animaux</a></div>
+            <div class="item item7"><a href="pages/pageDeBase.html">Les Serres</a></div> 
+        </div>         
+    </aside>
+
+<!-- fin aside /end of aside-->
 
     <!-- début du contenu / start of content-->
 
@@ -88,7 +126,7 @@
 
         <div class="pub pub1">
            <ul> 
-            <li class="li ref1">Permaculture de merde</li>
+            <li class="li ref1">Permaculture</li>
             <li class="li ref2">Herbes Aromatique</li>
             <li class="li ref3">Recettes</li>
             <li class="li ref4">Pourquoi Bio</li>
@@ -124,57 +162,41 @@
 
     <!-- début aside / end of aside-->
 
-    <aside id="aside">
-            <div class="item item1"><a href="pages/marcher.html">Le Marché</a></div>
-            <div class="item item2"><a href="#">Les Graines</a></div>
-            <div class="item item3"><a href="#">Les Plants</a></div>
-            <div class="item item4">
-                <form id= "searchbox" method= "get " action= "/search " autocomplete= "off ">
-                    <input class="search" name= "q" type= "text " placeholder ="search… "/>
-                    <input id= "button-submit" type= "submit" value= "submit"/>
-                </form>
-               </div>
-            <div class="item item5"><a href="#">Le jardin</a></div>
-            <div class="item item6"><a href="#">La Vie du Jardin</a></div>
-            <div class="item item7"><a href="#">Les Serres</a></div>      
-    </aside>
-
-    <!-- fin aside /end of aside-->
 
     <!-- debut du footer start of footer-->
 
     <div id="footer">
         <div class="index index1">
-            <ul>
-                <h4>jesaispas</h4>
-            <li class="li ref1">Economie Locale</li>
-            <li class="li ref2">Eco résponsable</li>
-            <li class="li ref3">Permaculture</li>
-            <li class="li ref4">Calandrier</li>
+            <ul class = "box">
+                <h4 class= "overtitle1">je sais pas</h4>
+                    <li class="li ref1"><a href = "pages/erreur.html">Economie Locale</a></li>
+                    <li class="li ref2"><a href = "pages/erreur.html">Eco résponsable</a></li>
+                    <li class="li ref3"><a href = "pages/erreur.html">Permaculture</a></li>
+                    <li class="li ref4"><a href = "pages/erreur.html">Calandrier</a></li>
             </ul>
        
-            <ul>
-                <h4>jesaispas</h4>
-            <li class="li ref5">Pourquoi Bio</li>
-            <li class="li ref6">Herbes Aromatiques</li>
-            <li class="li ref7">Astuces</li>
-            <li class="li ref8">Recettes</li>
+            <ul class = "box1">
+                <h4 class= "overtitle2">je sais pas</h4>
+                    <li class="li ref5"><a href = "pages/erreur.html">Pourquoi Bio</a></li>
+                    <li class="li ref6"><a href = "pages/erreur.html">Herbes Aromatiques</a></li>
+                    <li class="li ref7"><a href = "pages/erreur.html">Astuces</a></li>
+                    <li class="li ref8"><a href = "pages/erreur.html">Recettes</a></li>
             </ul>
        
-            <ul>
-                <h4>jesaispas</h4>
-            <li class="li ref9">Black-Carp</li>
-            <li class="li ref10">Black-Code</li>
-            <li class="li ref11">Black-Burger</li>
-            <li class="li ref12">Black-Sportwear</li>
+            <ul class = "box2">
+                <h4 class= "overtitle3">Partenaires</h4>
+                    <li class="li ref9"><a href = "pages/erreur.html">Black-Carp</a></li>
+                    <li class="li ref10"><a href = "pages/erreur.html">Black-Code</a></li>
+                    <li class="li ref11"><a href = "pages/erreur.html">Black-Burger</a></li>
+                    <li class="li ref12"><a href = "pages/erreur.html">Black-Sportwear</a></li>
             </ul>
         
-            <ul>
-                <h4>jesaispas</h4>
-            <li class="li ref13">contact</li>
-            <li class="li ref14">Facebook</li>
-            <li class="li ref15">Instagramme</li>
-            <li class="li ref16">Twitter</li>
+            <ul class = "box3">
+                <h4 class= "overtitle4">Réseaux</h4>
+                    <li class="li ref13"><a href = "pages/erreur.html">contact</a></li>
+                    <li class="li ref14"><a href = "pages/erreur.html">Facebook</a></li>
+                    <li class="li ref15"><a href = "pages/erreur.html">Instagramme</a></li>
+                    <li class="li ref16"><a href = "pages/erreur.html">Twitter</a></li>
             </ul>
         </div>
         
@@ -186,10 +208,8 @@
     
     <!-- fin du footer / end of footer-->
 
-</div>
     <!-- fin du container / end of container-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>	
 </body>
 </html>
-

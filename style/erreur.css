@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(243, 226, 226);
+    
+}
+
+
+#date {
+    width: 280px;
+    height: 25px;
+    color: rgb(35, 109, 35);
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    color: rgb(35, 109, 35);
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(35, 109, 35);
+    text-shadow: 8px 8px 5px rgb(155, 148, 148);
+    font-weight: bold;
+    width: 1050px;
+    height: 395px;
+    background: url(../image/graines2.jpg) no-repeat center fixed;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    color: rgb(35, 109, 35);
+}

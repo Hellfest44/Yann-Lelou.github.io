@@ -1,0 +1,1012 @@
+body {
+    background: url(../image/serre2.png) no-repeat center fixed;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+    margin: auto;
+    width: 80%;
+    display: Flex;
+    flex-direction: column;
+}
+
+#header1 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;   
+    width: 880px;
+}
+
+.title {
+    margin-top: -20px;
+}
+
+.title h1 {
+    float: left;
+    margin: 10px;
+    text-shadow: 8px 8px 5px rgb(155, 148, 148);
+    color: rgb(35, 109, 35);
+    font-weight: bold;
+    font-size: 50px;
+    
+}
+
+
+
+#date {
+    width: 280px;
+    height: 25px;
+}
+
+.icon {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 450px;
+    height: 25px;
+}
+
+.user a {
+    width: 25px;
+    color: gray;
+}
+
+.panier a {
+    width: 25px;
+    color: rgb(194, 7, 7);
+}
+
+.titre {
+    margin-left: 100px;
+    
+}
+
+.social {
+    display: none;
+}
+
+#navbar {
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    width:890px;
+     
+}
+
+
+#navbar .li {
+    display: inline-block;
+}
+
+#topnav_menu {
+    display: none;
+}
+
+#topnav_hamburger_icon {
+    display: none;
+}
+
+#topnav_responsive_menu ul li {
+    display: inline-block;
+    
+}
+
+#topnav_responsive_menu ul li a {
+    
+    color: rgb(35, 109, 35);
+    
+}
+
+#topnav_responsive_menu ul {
+    padding: 0;
+    
+}
+
+.topnav_link {
+    display: none;
+}
+a {
+    display: flex;
+    width: 150px;
+    padding: 3px;
+    font-size: 15px;
+    box-shadow: 8px 8px 5px #444;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.index {
+
+    display: flex;
+    
+    box-shadow: 8px 8px 5px #444; 
+    /*background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);*/
+    gap: 10px;
+    margin: 10px;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    align-items: center;
+    margin: 5px 5px 5px 5px;
+    width: 100%;
+}
+
+.index ul {
+
+    width: 160px;
+    margin: 0px 0 0 0 ;
+    padding: 10px;
+}
+
+.index ul li {
+
+    font-size: 10px;
+    color: rgb(248, 20, 3);
+    list-style: none;
+}
+
+.index ul li a {
+
+    display: flex;
+    width: 100px;
+    padding: 3px;
+    font-size: 15px;
+    box-shadow: inherit;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: inherit;
+    text-decoration: none;
+}
+
+
+
+.li {
+
+    font-size: 12px;
+    color: rgb(185, 224, 9);
+    list-style: none;
+}
+
+.overtitle1, .overtitle2, .overtitle3, .overtitle4 {
+
+    margin: 5px 5px 5px 5px;
+    font-size: 15px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 760px) {
+
+    body {
+        display: inherit;
+        margin: 0px;
+        flex-direction: column;
+    }
+
+    #header1 {
+        display: flex;
+        height: 25px;
+        width: 760px;
+    }
+
+    #date {
+        width: 650px;
+    }
+
+    .icon {
+        margin-right: 0px;
+        
+    }
+
+    .user, .panier {
+        margin: 10px 0px 0px 8px;
+    }
+    #header {
+        background-image: url(../Photos/tomates-noir-blanche.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;     
+        align-items: center;
+        margin: 0px 0px 4px;
+        width: 760px;
+    }
+
+    .logo {
+        display: none;
+    }
+    .title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 450px;
+    }
+    .titre, .titre1 {
+        display: flex;
+        font-family: cursive;
+        color: forestgreen;
+        font-weight: bolder;
+        font-size:1.8em; 
+        margin: 5px;
+    
+    }
+    .title h1 {
+        float: inherit;
+        margin-left: inherit;
+    }
+
+    .social {
+        display: flex;
+        justify-content: inherit;
+        position: fixed;       
+        flex-direction: column;
+        margin: 50px 0px 0px 420px;
+        z-index:100;
+        width: 680px;
+        height: 50px;
+      }
+
+      .reseaux img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .social a {
+        width: inherit;
+        box-shadow: none;
+        
+      }
+      #navbar {
+        position: fixed;
+        justify-content: inherit;
+        height: 70px;
+        margin-top: -50px;
+    }
+
+    #navbar a {
+        box-shadow: none;
+    }
+
+    .topnav {
+        
+        height: 70px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .topnav_link {
+        color: rgb(7, 7, 7);
+        padding: 12px;
+        text-decoration: none;       
+    }
+
+    .topnav_link:hover {
+        color: yellowgreen;
+    }
+
+    /* hide responsive menu */
+    #topnave_hamburger-icon,
+    #topnav_responsive_menu {
+        display: none;
+    }
+
+    /* hide classic menu */
+    #topnav_menu {
+        display: none;
+    }
+
+    /* posotion home link at left and humburger at right*/
+    #home_link {
+        flex-grow: 1;
+    }
+
+    /* disabled horizontal scrolling */
+    #connect {
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    /* show responsive menu and position at the right of the screen */
+    #topnav_responsive_menu {
+        display: block;
+        position: absolute;
+        margin: 0;
+        right: 0;
+        top: 70px;
+        width: 100vw;
+        height: 100vh;
+        z-index: 99;
+        transform-origin: 0% 0%;
+        transform: translate(200%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    }
+
+    #topnav_responsive_menu ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin: 0;
+        right: 0;
+        top: 0;
+        min-width: 50vw;
+        height: 100vh;
+        padding: 0px 0 0;
+        text-align: center;
+        
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    #topnav_responsive_menu li {
+        padding: 12px 24px;
+    }
+
+    #topnav_responsive_menu a {
+        white-space: nowrap;
+        color: rgb(10, 10, 10);
+        text-decoration: none;
+    }
+
+    /* and let's slide it in from the right */
+    #topnav_responsive_menu.open {
+        transform: none;
+        position: fixed;
+    }
+
+    /* ***************** HAMBURGER ICON *************************/
+    /* define size and position of the humburger link */
+    #topnav_hamburger_icon {
+        display: block;
+        position: relative;
+        margin: 15px;
+        padding: 0;
+        width: 33px;
+        height: 28px;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: pointer;
+    }
+
+    /* define the style (size, color, position, animation,...)of the 3 span */
+    #topnav_hamburger_icon span {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        margin-bottom: 5px;
+        background: #0e0d0d;
+        border-radius: 3px;
+        z-index: 100;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.25s ease-in-out;
+        -moz-transition: 0.25s ease-in-out;
+        -o-transition: 0.25s ease-in-out;
+        transition: 0.25s ease-in-out;
+    }
+
+    /* set the 3 spans position to look like a hamburger */
+    #topnav_hamburger_icon span:nth-child(1) {
+        top: 0px;
+        -webkit-transform-origin: left top;
+        -moz-transform-origin: left top;
+        -o-transform-origin: left top;
+        transform-origin: left top;
+      }
+      #topnav_hamburger_icon span:nth-child(2) {
+        top: 12px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+      }
+      #topnav_hamburger_icon span:nth-child(3) {
+        top: 24px;
+        -webkit-transform-origin: left bottom;
+        -moz-transform-origin: left bottom;
+        -o-transform-origin: left bottom;
+        transform-origin: left bottom;
+      }
+
+    /* change color when opening the menu */
+    #topnav_hamburger_icon.open span {
+        background: #333;
+      }
+
+    /* the first span rotates 45° \ */
+    #topnav_hamburger_icon.open span:nth-child(1) {
+        width: 110%;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    /* the second span disappear */
+    #topnav_hamburger_icon.open span:nth-child(2) {
+        width: 0%;
+        opacity: 0;       
+    }
+    
+    /* the last span rotates -45° / */
+    #topnav_hamburger_icon.open span:nth-child(3) {
+        width: 110%;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    } 
+
+    #button-submit {
+        width: 25px;
+        height: 25px;
+        border-radius: 50px;
+    }
+
+    .favorite {
+        background-color: aqua;
+        display: flex;
+        margin-right: 0px;
+        margin-left: 115px;
+        border-radius: 15px;
+        width:140px;
+        
+    }  
+    #aside {
+        display: inherit;
+        width: 480px;
+    }
+
+    .groupe {
+        display: flex;
+        flex-direction: column;
+        width: 480px;
+
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height:161px;
+        width: 750px;
+        margin: 5px 0px 0px 0px;
+        background-size: cover;
+        
+    }
+
+    .item a {
+        width: 100%;
+        height: 100px;
+        font-size: 2.0em;
+        color: forestgreen;
+    }
+    
+    
+    .item4 {
+        display: none;
+        order: -3;
+    }
+
+    .item1 {
+        order:2;
+    }
+    #content {
+        display: none;
+    
+    }
+
+    #footer {
+        display: inherit;
+        width: 800px;
+        
+    }
+    
+    .index {
+    
+        display: flex;
+        border-radius: none;
+        box-shadow: none;
+        margin: 10px;
+        justify-content: space-evenly;
+        align-content: flex-start;
+        align-items: center;
+        margin: 5px 5px 5px 5px;
+        width: 100%;
+    }
+    
+    .index ul {
+
+        width: 160px;
+        margin: 0px 0 0 0 ;
+        padding: 20px;
+    }
+    
+    .index ul li {
+    
+        font-size: 10px;
+        color: rgb(248, 20, 3);
+        list-style: none;
+    }
+
+    .index ul li a {
+
+        display: flex;
+        width: 100px;
+        padding: 3px;
+        font-size: 15px;
+        box-shadow: inherit;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: inherit;
+        text-decoration: none;
+    }
+    
+    .box3 {
+        display: none;
+    }
+
+    .overtitle1, .overtitle2, .overtitle3 {
+
+        margin: 5px 5px 15px 5px;
+        font-size: 20px;
+    }
+
+    .overtitle1 {
+        color: forestgreen;
+
+    }
+
+    .overtitle2 {
+        color: rgb(110, 110, 13);
+
+    }
+
+    .overtitle3 {
+        color: red;
+
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        width: 760px;
+    }
+
+      
+    }
+
+@media screen and (max-width: 480px) {
+
+    body {
+        display: inherit;
+        margin: 0px;
+        flex-direction: column;
+    }
+
+    #header1 {
+        display: flex;
+        height: 25px;
+        width: 700px;
+    }
+
+    #date {
+        width: 650px;
+    }
+
+    .icon {
+        margin-right: 0px;
+        
+    }
+
+    .user, .panier {
+        margin: 0px 0px 0px 8px;
+    }
+    #header {
+        background-image: url(../Photos/tomates-noir-blanche.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;     
+        align-items: center;
+        margin: 0px 0px 4px;
+        width: 760px;
+    }
+
+    .logo {
+        display: none;
+    }
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 450px;
+    }
+    .titre, .titre1 {
+        display: flex;
+        font-family: cursive;
+        color: forestgreen;
+        font-weight: bolder;
+        font-size:1.8em; 
+        margin: 5px;
+    
+    }
+    .title h1 {
+        float: inherit;
+        margin-left: inherit;
+    }
+
+    .social {
+        display: flex;
+        justify-content: inherit;
+        position: fixed;       
+        flex-direction: column;
+        margin: 30px 0px 0px 680px;
+        z-index:100;
+        width: 50px;
+        height: 50px;
+      }
+
+      .reseaux img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .social a {
+        width: inherit;
+        box-shadow: none;
+        
+      }
+      #navbar {
+        position: fixed;
+        justify-content: inherit;
+        height: 70px;
+        margin-top: -100px;
+    }
+
+    #navbar a {
+        box-shadow: none;
+    }
+
+    .topnav {
+        
+        height: 70px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .topnav_link {
+        color: rgb(7, 7, 7);
+        padding: 12px;
+        text-decoration: none;       
+    }
+
+    .topnav_link:hover {
+        color: yellowgreen;
+    }
+
+    /* hide responsive menu */
+    #topnave_hamburger-icon,
+    #topnav_responsive_menu {
+        display: none;
+    }
+
+    /* hide classic menu */
+    #topnav_menu {
+        display: none;
+    }
+
+    /* posotion home link at left and humburger at right*/
+    #home_link {
+        flex-grow: 1;
+    }
+
+    /* disabled horizontal scrolling */
+    #connect {
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    /* show responsive menu and position at the right of the screen */
+    #topnav_responsive_menu {
+        display: block;
+        position: absolute;
+        margin: 0;
+        right: 0;
+        top: 70px;
+        width: 100vw;
+        height: 100vh;
+        z-index: 99;
+        transform-origin: 0% 0%;
+        transform: translate(200%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    }
+
+    #topnav_responsive_menu ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin: 0;
+        right: 0;
+        top: 0;
+        min-width: 50vw;
+        height: 100vh;
+        padding: 0px 0 0;
+        text-align: center;
+        
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    #topnav_responsive_menu li {
+        padding: 12px 24px;
+    }
+
+    #topnav_responsive_menu a {
+        white-space: nowrap;
+        color: rgb(10, 10, 10);
+        text-decoration: none;
+    }
+
+    /* and let's slide it in from the right */
+    #topnav_responsive_menu.open {
+        transform: none;
+        position: fixed;
+    }
+
+    /* ***************** HAMBURGER ICON *************************/
+    /* define size and position of the humburger link */
+    #topnav_hamburger_icon {
+        display: block;
+        position: relative;
+        margin: 15px;
+        padding: 0;
+        width: 33px;
+        height: 28px;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: pointer;
+    }
+
+    /* define the style (size, color, position, animation,...)of the 3 span */
+    #topnav_hamburger_icon span {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        margin-bottom: 5px;
+        background: #0e0d0d;
+        border-radius: 3px;
+        z-index: 100;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.25s ease-in-out;
+        -moz-transition: 0.25s ease-in-out;
+        -o-transition: 0.25s ease-in-out;
+        transition: 0.25s ease-in-out;
+    }
+
+    /* set the 3 spans position to look like a hamburger */
+    #topnav_hamburger_icon span:nth-child(1) {
+        top: 0px;
+        -webkit-transform-origin: left top;
+        -moz-transform-origin: left top;
+        -o-transform-origin: left top;
+        transform-origin: left top;
+      }
+      #topnav_hamburger_icon span:nth-child(2) {
+        top: 12px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+      }
+      #topnav_hamburger_icon span:nth-child(3) {
+        top: 24px;
+        -webkit-transform-origin: left bottom;
+        -moz-transform-origin: left bottom;
+        -o-transform-origin: left bottom;
+        transform-origin: left bottom;
+      }
+
+    /* change color when opening the menu */
+    #topnav_hamburger_icon.open span {
+        background: #333;
+      }
+
+    /* the first span rotates 45° \ */
+    #topnav_hamburger_icon.open span:nth-child(1) {
+        width: 110%;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    /* the second span disappear */
+    #topnav_hamburger_icon.open span:nth-child(2) {
+        width: 0%;
+        opacity: 0;       
+    }
+    
+    /* the last span rotates -45° / */
+    #topnav_hamburger_icon.open span:nth-child(3) {
+        width: 110%;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    } 
+
+    #button-submit {
+        width: 25px;
+        height: 25px;
+        border-radius: 50px;
+    }
+
+    .favorite {
+        background-color: aqua;
+        display: flex;
+        margin-right: 0px;
+        margin-left: 115px;
+        border-radius: 15px;
+        width:140px;
+        
+    }  
+    #aside {
+        display: inherit;
+        width: 480px;
+    }
+
+    .groupe {
+        display: flex;
+        flex-direction: column;
+        width: 480px;
+
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height:161px;
+        margin: 5px 0px 0px 0px;
+        background-size: cover;
+        
+    }
+
+    .item a {
+        width: 100%;
+        height: 100px;
+        font-size: 2.0em;
+        color: forestgreen;
+    }
+    
+    
+    .item4 {
+        display: none;
+        order: -3;
+    }
+
+    .item1 {
+        order:2;
+    }
+    #content {
+        display: none;
+    
+    }
+
+    #footer {
+        display: inherit;
+        width: 760px;
+        
+    }
+    
+    .index {
+    
+        display: flex;
+        border-radius: none;
+        box-shadow: none;
+        margin: 10px;
+        justify-content: center;
+        align-content: flex-start;
+        align-items: center;
+        margin: 5px 5px 5px 5px;
+        width: 100%;
+    }
+    
+    .index ul {
+
+        width: 160px;
+        margin: 0px 0 0 0 ;
+        padding: 20px;
+    }
+    
+    .index ul li {
+    
+        font-size: 10px;
+        color: rgb(248, 20, 3);
+        list-style: none;
+    }
+
+    .index ul li a {
+
+        display: flex;
+        width: 100px;
+        padding: 3px;
+        font-size: 15px;
+        box-shadow: inherit;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: inherit;
+        text-decoration: none;
+    }
+    
+    .box3 {
+        display: none;
+    }
+
+    .overtitle1, .overtitle2, .overtitle3 {
+
+        margin: 5px 5px 15px 5px;
+        font-size: 20px;
+    }
+
+    .overtitle1 {
+        color: forestgreen;
+
+    }
+
+    .overtitle2 {
+        color: rgb(110, 110, 13);
+
+    }
+
+    .overtitle3 {
+        color: red;
+
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        width: 760px;
+    }
+}

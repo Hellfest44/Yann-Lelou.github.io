@@ -1,0 +1,78 @@
+body {
+    background-color: black;
+}
+
+
+.social {
+    display: none;
+}
+
+#navbar 
+{
+    margin: 100px auto;
+    width: 50%;
+    height: 100px;
+    background: #48435C;
+}
+ 
+.menu
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ 
+.menu a 
+{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+ 
+nav a:hover 
+{
+    background: #5A5766
+}
+
+label
+{
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    
+    #navbar 
+{
+    display: flex;
+    position: fixed;
+    z-index: 99;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #48435C;
+    margin: 0;
+}
+
+    #menu 
+    {
+        display: none;
+    }
+ 
+    label 
+    {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        color: white;
+        cursor: pointer;
+    }
+}

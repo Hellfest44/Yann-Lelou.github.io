@@ -1,23 +1,5 @@
-$().ready(() => {
-    $("h1").css("color", "forestgreen");
-});
-
-function showResponsiveMenu() {
-    var menu = document.getElementById("topnav_responsive_menu");
-    var icon = document.getElementById("topnav_hamburger_icon");
-    var connect = document.getElementById("connect");
-    if (menu.className === "") {
-        menu.className = "open";
-        icon.className = "open";
-        connect.style.overflowY = "hidden";
-    } else {
-        menu.className = "";
-        icon.className ="";
-        connect.style.overflowY ="";
-    }
-}
-
 // Dates..................
+
 function pause(ms) 
 {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -25,7 +7,7 @@ function pause(ms)
 
 async function afficherDate() 
 {
-  while(true) 
+  while (true) 
   {
     await pause(1000);
     var cejour = new Date();
@@ -39,17 +21,35 @@ async function afficherDate()
 }
 afficherDate();
 
+// Menu_hamburger....................
 
-// XMLHttpRequest.........
-
-function reqListener() {
-    console.log(this.responseText);
+function showResponsiveMenu() {
+  var menu = document.getElementById("topnav_responsive_menu");
+  var icon = document.getElementById("topnav_hamburger_icon");
+  var connect = document.getElementById("connect");
+  if (menu.className === "") {
+      menu.className = "open";
+      icon.className = "open";
+      connect.style.overflowY = "hidden";
+  } else {
+      menu.className = "";
+      icon.className ="";
+      connect.style.overflowY ="";
+  }
 }
 
-let req = new XMLHttpRequest();
-req.onload = reqListener;
-req.open("get", "data.txt", true);
-req.send();
+// Bonjour........................
 
-// FETCH......................
+const name = () => {
+  let sayHello = document.getElementById ('sayHello');
+  let nameStorage = localStorage.getItem('nom');
+
+  if (nameStorage == null) {
+    sayHello.innerHTML = "";
+  } else {
+    sayHello.innerHTML = `hi ${nameStorage}`;
+  }
+};
+
+name();
 

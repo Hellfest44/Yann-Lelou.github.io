@@ -1,0 +1,165 @@
+body {
+    background: url(../image/serre2.png) no-repeat center fixed;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 35px 100px 70px 1000px 20px;
+    grid-template-areas:
+   "h1 h1 h1 h1" 
+    "h h h h"
+    "n n n n"
+    "a a a a"
+    "g g g g";
+}
+
+#header1 {
+    grid-area: h1;
+    display: flex;
+}
+
+#header {
+    grid-area: h;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.title h1 {
+    float: left;
+    margin: 10px;
+    text-shadow: 8px 8px 5px rgb(155, 148, 148);
+    font-size: 50px;
+    color: forestgreen;
+    
+}
+
+#date {
+    width: 280px;
+    height: 25px;
+}
+
+.icon {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 450px;
+    height: 25px;
+}
+
+.user a {
+    width: 25px;
+    color: gray;
+}
+
+.panier a {
+    width: 25px;
+    color: gray;
+}
+
+.titre {
+    margin-left: 100px;
+}
+
+.social {
+    display: none;
+}
+
+#navbar {
+    grid-area: n;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#navbar .li {
+    display: inline-block;
+}
+
+#topnav_menu {
+    display: none;
+}
+
+#topnav_hamburger_icon {
+    display: none;
+}
+
+#topnav_responsive_menu ul li {
+    display: inline-block;
+    padding: 20px;
+    height: 50px;
+    
+    
+}
+
+#topnav_responsive_menu ul li a {
+    
+    color: rgb(35, 109, 35); 
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#topnav_responsive_menu ul {
+    padding: 0;
+    
+}
+
+.topnav_link {
+    display: none;
+}
+a {
+    display: flex;
+    width: 200px;
+    padding: 3px;
+    font-size: 15px;
+    box-shadow: 8px 8px 5px #444;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.contenair {
+    grid-area: a;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    height: 1020px;
+    width: 1300px;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+#content a {
+    box-shadow: inherit;
+    margin: 10px;
+    padding: 10px;
+}
+
+.conteneur {
+    padding: 0px 10px 0 0;
+    margin: -10px 5px;
+    height: 150px;
+    width: 250px;
+}
+
+.footer {
+    grid-area: g;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    margin: 10px;
+    padding: 10px;
+}
